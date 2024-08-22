@@ -1,35 +1,38 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# naolib_transit_service
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+An unofficial, public API to access Naolib's and Nantes Métropole's public transit data.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Access real-time public transit data for Nantes Métropole.
+- Fetch schedules, routes, and stop information.
+- Easy integration with Flutter applications.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+1. Add the package to your `pubspec.yaml` file:
+   ```yaml
+   dependencies:
+     naolib_transit_service: ^0.0.1
+   ```
+
+2. Import the package in your Dart code:
+   ```dart
+   import 'package:naolib_transit_service/naolib_transit_service.dart';
+   ```
+
+3. Follow the documentation for usage examples.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Here's a simple example of how to use the package to fetch transit data:
 
 ```dart
-const like = 'sample';
+import 'package:naolib_transit_service/naolib_transit_service.dart';
+
+void main() async {
+  final transitService = NaolibTransitService();
+}
 ```
 
 ## Additional information
