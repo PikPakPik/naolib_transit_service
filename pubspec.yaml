@@ -1,0 +1,14 @@
+name: naolib_transit_service
+description: "An unofficial, public API to access Naolib's and Nantes Métropole's public transit data."
+version: 0.0.1
+homepage: https://github.com/PikPakPik/naolib_transit_service
+
+environment:
+  sdk: ^3.0.0
+
+dependencies:
+  http: ^1.2.1
+
+dev_dependencies:
+  test: ^1.24.0
+  lints: ^4.0.0
